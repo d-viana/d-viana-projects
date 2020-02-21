@@ -1,0 +1,174 @@
+/*En flexbox todas las clases se suelen usar en el contenedor a excepcion de unas cuantas clases que se
+usan con los elementos*/
+
+/*Prefijos (Prefix): Son palabras reservadas que suelen ir delante de algunos 
+valores de las propiedades css3  y que son distintas según el navegador:
+
+-webkit- (Google Chrome y Safari)
+-moz- (Firefox)
+-o- (Opera)
+-ms- (Internet explorer)
+
+Ej:
+
+#elemento{
+  background: -webkit-linear-gradient(red, blue); Para Google Chrome/Safari 
+  background: -o-linear-gradient(red, blue); Para Opera
+  background: -moz-linear-gradient(red, blue);  Para Firefox
+  background: linear-gradient(red, blue); Standard syntax 
+}
+
+Con el plugin Autoprefix, Press F1 + buscar autoprefix css
+
+*/
+
+.contenedor-row {
+  width: 500px;
+  height: 200px;
+  background: #fff;
+  padding: 10px;
+  border: solid 10px #000;
+  margin: 20px;
+
+  /*Permite trabajar con flexbox, crea un objeto contenedor con
+  hijos flexibles. También existe inline-flex (solo objetos en linea, menos utilizada)*/
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+
+  /*Valores: row|column|row-reverse|column-reverse. 
+  Direccion en la cual se van a posicionar las cajas */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  /*Valores: wrap|nowrap|wrap-reverse. 
+  Redimensiona los elementos para que ocupen el 100% dentro del contenedor y los coloca en varias lineas. 
+  no-wrap los coloca en una sola linea siempre*/
+  /*flex-wrap: wrap;*/
+
+  /*Valores: row wrap ; Primer valor de flex-direction y segundo de flex-wrap
+  Equivale a los dos anteriores juntos y acepta cualquier valor de los anteriores*/
+  /*flex-flow: row wrap;*/
+
+  /* Valores: flex-start|flex-end|center|space-around|space-beteween. 
+  Posiciona los elementos dentro del contenedor padre en el eje x */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  /*Valores: flex-start|flex-end|center|stretch|baseline. 
+  Posiciona los elementos en el padre en el eje y. 
+  Se usa solo en items en una sola fila (navbars,etc) 
+  *strech los estira y baseline alinea el texto dentro de ellos */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /*Valores: center|flex-end|flex-start|space-between|space-around. 
+  Similar a align-items pero se usa para grupos de items, se usa cuando tenemos varias filas
+  de items (galerias, etc)*/
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+.contenedor-column {
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  padding: 10px;
+  border: solid 10px #000;
+  margin: 20px;
+
+  /*Permite trabajar con flexbox, crea un objeto contenedor con
+  hijos flexibles. También existe inline-flex (solo objetos en linea, menos utilizada)*/
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+
+  /*Valores: row|column|row-reverse|column-reverse. 
+  Direccion en la cual se van a posicionar las cajas */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  /*Valores: wrap|nowrap|wrap-reverse. 
+  Redimensiona los elementos para que ocupen el 100% dentro del contenedor y los coloca en varias lineas. 
+  no-wrap los coloca en una sola linea siempre*/
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  /*Valores: row wrap ; Primer valor de flex-direction y segundo de flex-wrap
+  Equivale a los dos anteriores juntos y acepta cualquier valor de los anteriores*/
+  /*flex-flow: row wrap;*/
+
+  /* Valores: flex-start|flex-end|center|space-around|space-beteween. 
+  Posiciona los elementos dentro del contenedor padre en el eje x */
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  /*Valores: flex-start|flex-end|center|stretch|baseline. 
+  Posiciona los elementos en el padre en el eje y. Se usa solo en items en una sola fila (navbars,etc) *strech los estira y baseline alinea el texto dentro de ellos */
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  /*Valores: center|flex-end|flex-start|space-between|space-around. 
+  Similar a align-items pero se usa para grupos de items, se usa cuando tenemos varias filas
+  de items (galerias, etc)*/
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+}
+.elemento {
+  color: #fff;
+  margin: 5px;
+  width: 50px;
+  /*flex-basis: 50px  Similar a width pero es dinámico, modificando el height también*/
+  height: 50px;
+  background: rgb(255, 136, 0);
+  text-align: center;
+}
+
+.elemento2 {
+  /*Es el factor de crecimiento que el elemento va a tener hasta ocupar el 100% 1,2,3,4px... más que sus hermanos, empujandolos*/
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  /*Es el factor de encojimiento que el elemento va a tener, 1,2,3,4px... más que sus hermanos para que quepan*/
+  -ms-flex-negative: 2;
+  flex-shrink: 2;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+.elemento1 {
+  /*Es la suma de flex-grow, flex-shrink y flex-basis*/
+  -webkit-box-flex: 3;
+  -ms-flex: 3 1 70px;
+  flex: 3 1 70px;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.elemento3 {
+  /*Permite cambiar el orden en el que se ordenan los elementos,
+    solo funciona si todos tienen el atributo order asignado*/
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+
+  /*Valores: flex-start|flex-end|center|stretch|baseline. 
+  Alinea un solo item independientemente de los hermanos.
+  stretch necesita un height: auto; 
+  *No funciona con flex-wrap*/
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.elemento4 {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+}

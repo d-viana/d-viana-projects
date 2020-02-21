@@ -1,0 +1,9 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    /* minmax() es una función que determina el tamaño minimo y máximo de cada elemento*/
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+    /*Cada dato determina el tamaño y número de comunnas 1 dato= 1 tamaño y columna, etc*/
+    grid-template-rows: minmax(auto, auto);
+    /*Cada dato determina el tamaño de la primera, segunda etc filas*/
+}

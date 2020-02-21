@@ -1,0 +1,66 @@
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    /*Selecciona el background y le da las propiedades posteriores a su transicion
+    al hacer .box:hover*/
+    transition-property: background, border-radius, transform;
+    /*Duración de la transción, cada duración entre ",," especifica la duración de una 
+    propiedad de transition property
+    transition-property: all; (Selecciona todas las propiedades), con al no hace falta poner varios tiempos*/
+    transition-duration: 1.5s, 0.2s;
+    /*Tiempo que tarda en activarse, cada valor corresponde 
+    a una propiedad en transition-property*/
+    transition-delay: 0.1s, 0.1;
+    /*Curva de la animación. linear, ease-in, ease-out, ease-in-out */
+    transition-timing-function: ease-out;
+}
+
+.box:hover {
+    background: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+
+/*
+TRANSITIONAL PROPERTIES
+-Properties that have an identifiable halfway point
+
+background-color
+background-position
+border-color
+border-spacing
+bottom
+color
+font-size
+font-weight
+height left
+letter-spacing
+line-height
+margin
+max-height
+max-width
+min-height
+min-width
+opacity
+outline-color
+outline-offset
+outline-width
+padding right
+text-indent
+text-shadow
+top
+vertical-align
+visibility
+width
+word-spacing
+z-index
+*/

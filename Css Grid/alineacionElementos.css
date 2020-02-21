@@ -1,0 +1,48 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.start {
+    /*Alinea Horizontalmente*/
+    justify-items: start;
+    /*Alinea Verticalmente*/
+    align-items: start;
+}
+
+.stretch {
+    /*Alinea Horizontalmente*/
+    justify-items: stretch;
+    /*Alinea Verticalmente*/
+    align-items: stretch;
+}
+
+.end {
+    /*Alinea Horizontalmente*/
+    justify-items: end;
+    /*Alinea Verticalmente*/
+    align-items: end;
+}
+
+.auto {
+    /*Alinea Horizontalmente*/
+    justify-items: auto;
+    /*Alinea Verticalmente*/
+    align-items: auto;
+}
+
+.center {
+    /*Alinea Horizontalmente*/
+    justify-items: center;
+    /*Alinea Verticalmente*/
+    align-items: center;
+}
+
+.item {
+    /*Alinea Horizontalmente*/
+    justify-self: stretch;
+    /*Alinea Verticalmente*/
+    align-self: stretch;
+}

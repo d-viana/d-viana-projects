@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--My Stylesheet CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pagina Prueba Bootstrap</title>
+</head>
+
+<body>
+    <!--***********************************CONTENIDO******************************************************-->
+
+    <!--FLEXBOX GRID-->
+    <div class="container-fluid borde">
+        <h1 class="row">Flexbox grid</h1>
+        <div class="row">
+            <div class="d-xs-none col-xs-12 col-lg-3 col-xl-2 borde1">
+                <p>Uno</p>
+            </div>
+            <div class="col-xs-12 col-lg-3 col-xl-2 borde2">
+                <p>Dos</p>
+            </div>
+            <div class="d-xs-none col-xs-12 col-lg-6 col-xl-8 borde3">
+                <p>Tres</p>
+            </div>
+        </div>
+
+        <!--DISPLAY Y OCULTACIÓN-->
+        <h1 class="row">Display y ocultación</h1>
+        <div class="row">
+            <div class="d-block p-2 bg-primary text-white">d-block</div>
+            <div class="d-block p-2 bg-dark text-white">d-block</div>
+
+            <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+            <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+
+            <div class="d-inline-block p-2 bg-primary text-white">d-inline-block</div>
+            <div class="d-inline-block p-2 bg-dark text-white">d-inline-block</div>
+
+            <div class="d-table p-2 bg-primary text-white">d-table</div>
+            <div class="d-table-row p-2 bg-dark text-white">d-table-row</div>
+            <div class="d-table-cell p-2 bg-dark text-white">d-table-cell</div>
+
+            <div class="d-none d-flex p-2 bg-primary text-white">d-flex</div>
+            <div class="d-inline-flex p-2 bg-dark text-white">d-inline-flex</div>
+        </div>
+
+        <!--ALINEACIÓN Y POSICIÓN-->
+        <h1 class="row">Alineación y posición</h1>
+        <div class="row">
+            <div class="col border">
+                <div class="clearfix">
+                    <span class="float-left border">IZQUIERDA</span>
+                    <span class="float-right border">DERECHA</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-info clearfix">
+                <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+                <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+            </div>
+        </div>
+        <!--Justify-content-->
+        <h2 class="row">Justify-content</h2>
+        <div class="container border">
+            <div class="row justify-content-start">
+                <span class="col-4 borde1">start</span>
+                <span class="col-4 borde2">start</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row justify-content-end">
+                <span class="col-4 borde1">end</span>
+                <span class="col-4 borde2">end</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row justify-content-center">
+                <span class="col-4 borde1">center</span>
+                <span class="col-4 borde2">center</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row justify-content-between">
+                <span class="col-4 borde1">between</span>
+                <span class="col-4 borde2">between</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row justify-content-around">
+                <span class="col-4 borde1">around</span>
+                <span class="col-4 borde2">around</span>
+            </div>
+        </div>
+
+        <!--Aling-items-->
+        <h2 class="row">Align items</h2>
+        <div class="container border">
+            <div class="row align-items-start height-container">
+                <span class="col-4 borde1">start</span>
+                <span class="col-4 borde2">start</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row align-items-end height-container">
+                <span class="col-4 borde1">end</span>
+                <span class="col-4 borde2">end</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row align-items-center height-container">
+                <span class="col-4 borde1">center</span>
+                <span class="col-4 borde2">center</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row align-items-baseline height-container">
+                <span class="col-4 borde1">baseline</span>
+                <span class="col-4 borde2">baseline</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row align-items-stretch height-container">
+                <span class="col-4 borde1">stretch</span>
+                <span class="col-4 borde2">stretch</span>
+            </div>
+        </div>
+
+        <!--Aling-content-->
+        <h2 class="row">Align content</h2>
+        <div class="container border">
+            <div class="row height-container align-content-start">
+                <span class="col-4 borde1">start</span>
+                <span class="col-4 borde2">start</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container align-content-end">
+                <span class="col-4 borde1">end</span>
+                <span class="col-4 borde2">end</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container align-content-center">
+                <span class="col-4 borde1">center</span>
+                <span class="col-4 borde2">center</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container align-content-stretch">
+                <span class="col-4 borde1">stretch</span>
+                <span class="col-4 borde2">stretch</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container align-content-around">
+                <span class="col-4 borde1">around</span>
+                <span class="col-4 borde2">around</span>
+            </div>
+        </div>
+
+        <!--Aling-self-->
+        <h2 class="row">Align self</h2>
+        <div class="container border">
+            <div class="row height-container">
+                <span class="col-4 borde1 align-self-start">start</span>
+                <span class="col-4 borde2">DOS</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container">
+                <span class="col-4 borde1 align-self-end">end</span>
+                <span class="col-4 borde2">DOS</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container">
+                <span class="col-4 borde1 align-self-center">center</span>
+                <span class="col-4 borde2">DOS</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container">
+                <span class="col-4 borde1 align-self-baseline">baseline</span>
+                <span class="col-4 borde2">DOS</span>
+            </div>
+        </div>
+        <div class="container border">
+            <div class="row height-container">
+                <span class="col-4 borde1 align-self-stretch">stretch</span>
+                <span class="col-4 borde2">DOS</span>
+            </div>
+        </div>
+
+        <!--fixed-->
+        <h2 class="row">Fixed-Top/ Bottom (anclados al inicio y fin de página)</h2>
+        <div class="container-fluid fixed-top">
+            <div class="row justify-content-end">
+                <span class="col-1 borde1">fixed-top</span>
+            </div>
+        </div>
+        <div class="container-fluid fixed-bottom">
+            <div class="row justify-content-end">
+                <span class="col-1 borde1">fixed-bottom</span>
+            </div>
+        </div>
+
+        <!--TIPOGRAFÍA-->
+        <h1 class="row">TIPOGRAFÍA</h1>
+        <p class="display-1">Display-1</p>
+        <p class="display-2">Display-2</p>
+        <p class="display-3">Display-3</p>
+        <p class="display-4">Display-4</p>
+        <p class="small">small</p>
+        <p class="mark">mark</p>
+        <abbr title="Abrebiación">abbr</abbr>
+        <p class="blockquote border">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis dolorum ducimus repudiandae vero non nostrum beatae consequatur laudantium. Enim distinctio repellendus quasi nobis aperiam praesentium maiores pariatur at. Aperiam, voluptas.
+            <p class="blockquote-footer">Jhon Doe</p>
+        </p>
+        <code>.code-example{
+            color:red;
+        }
+         </code>
+        <p>kbd example:<kbd>CNTRL+C</kbd></p>
+        <pre>pre example:
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Vero officia distinctio ea explicabo consequatur voluptate cum assumenda perspiciatis provident in hic quia, 
+            dolorum reprehenderit voluptatem dolor, nobis facilis, saepe voluptatum?</pre>
+
+        <!--BACKGROUND-->
+        <h1 class="row">BACKGROUND</h1>
+        <div class="container-fluid height-container bg-primary"></div>
+        <div class="container-fluid height-container bg-secondary"></div>
+        <div class="container-fluid height-container bg-success"></div>
+        <div class="container-fluid height-container bg-info"></div>
+        <div class="container-fluid height-container bg-warning"></div>
+        <div class="container-fluid height-container bg-danger"></div>
+        <div class="container-fluid height-container bg-light"></div>
+        <div class="container-fluid height-container bg-dark"></div>
+
+        <!--TABLAS-->
+        <h1 class="row">TABLAS</h1>
+        <div class="col">
+            <!--table-->
+            <table class="table">
+                <tr>
+                    <td>table</td>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <!--table-striped-->
+            <table class="table table-striped">
+                <tr>
+                    <td>table-striped</td>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <!--table-bordered-->
+            <table class="table table-bordered">
+                <tr>
+                    <td>table-bordered</td>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <!--table-hover-->
+            <table class="table table-hover">
+                <tr>
+                    <td>table-hover</td>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+            <!--table-dark-->
+            <table class="table table-dark">
+                <tr>
+                    <td class="table-dark">table-dark</td>
+                    <td class="table-light">table-light</td>
+                    <td class="table-primary">table-primary</td>
+                    <td class="table-secondary">table-secondary</td>
+                    <td class="table-success">table-success</td>
+                    <td class="table-danger">table-danger</td>
+                    <td class="table-warning">table-warning</td>
+                    <td class="table-info">table-info</td>
+                    <td class="table-active">table-active</td>
+                    <td class="table-default">table-default</td>
+                </tr>
+                <tr>
+                    <td class="table-dark">1</td>
+                    <td class="table-light">2</td>
+                    <td class="table-primary">3</td>
+                    <td class="table-secondary">4</td>
+                    <td class="table-success">5</td>
+                    <td class="table-danger">6</td>
+                    <td class="table-warning">7</td>
+                    <td class="table-info">8</td>
+                    <td class="table-active">9</td>
+                    <td class="table-default">10</td>
+                </tr>
+                <tr>
+                    <td class="table-dark">1</td>
+                    <td class="table-light">2</td>
+                    <td class="table-primary">3</td>
+                    <td class="table-secondary">4</td>
+                    <td class="table-success">5</td>
+                    <td class="table-danger">6</td>
+                    <td class="table-warning">7</td>
+                    <td class="table-info">8</td>
+                    <td class="table-active">9</td>
+                    <td class="table-default">10</td>
+                </tr>
+            </table>
+            <!--table-sm-->
+            <table class="table table-sm">
+                <tr>
+                    <td>table-sm</td>
+                    <td>LUNES</td>
+                    <td>MARTES</td>
+                    <td>MIERCOLES</td>
+                    <td>JUEVES</td>
+                    <td>VIERNES</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+        <!--IMAGENES-->
+        <h1 class="row">IMAGENES</h1>
+        <div class="container">
+            <div class="col">
+                <img class="img-fluid" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="img-fluid">
+            </div>
+            <div class="col">
+                <img class="img-fluid w-50 float-right" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="float-right">
+            </div>
+            <div class="col">
+                <img class="img-fluid w-50 float-left" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="float-left">
+            </div>
+            <div class="col">
+                <img class="img-fluid rounded" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="rounded">
+            </div>
+            <div class="col">
+                <img class="img-fluid rounded-circle" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="rounded-circle">
+            </div>
+            <div class="col">
+                <img class="img-fluid img-thumbnail" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="img-thumbnail">
+            </div>
+        </div>
+        <!--JUMBOTRON-->
+        <h1 class="row">JUMBOTRON</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+            <p class="jumbotron">jumbotron: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+                dolore ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+            <p class="jumbotron jumbotron-fluid">jumbotron-fluid: <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+                dolore ratione.</p>
+        </div>
+        <!--ALERT-->
+        <h1 class="row">ALERT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert">alert: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-success</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-success">alert-success: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+            dolore ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-info</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-info">alert-info: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore
+            ratione.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-warning</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-warning">alert-warning: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+            dolore ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-danger</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-danger">alert-danger: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore
+            ratione.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-primary</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.
+        </p>
+        <p class="alert-primary">alert-primary: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+            dolore ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.
+        </p>
+        <h2 class="row">alert-secondary</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-secondary">alert-secondary: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis
+            dolore ratione.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-light</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-light">alert-light: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore
+            ratione.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-dark</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.
+        </p>
+        <p class="alert-dark">alert-dark: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore
+            ratione.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.
+        </p>
+        <h2 class="row">alert-link</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert-info">alert-link: <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore
+            ratione. <a class="alert-link " href="#">alert-link</a>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <h2 class="row">alert-dismissable</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <p class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert">&times;</button> alert-dismissable: <br> ¡Felicidades! Puedes cerrar este elemento (sirve para dar mensajes)</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti iusto labore architecto nam asperiores sint quasi libero, qui repudiandae! Soluta molestiae possimus reprehenderit aut quaerat, dolores blanditiis officiis dolore ratione.</p>
+        <!--BOTONES-->
+        <h1 class="row">BOTONES</h1>
+        <button type="button" class="btn">btn</button>
+        <button type="button" class="btn btn-primary">btn-primary</button>
+        <button type="button" class="btn btn-secondary">btn-secondary</button>
+        <button type="button" class="btn btn-success">btn-success</button>
+        <button type="button" class="btn btn-info">btn-info</button>
+        <button type="button" class="btn btn-warning">btn-warning</button>
+        <button type="button" class="btn btn-danger">btn-danger</button>
+        <button type="button" class="btn btn-dark">btn-dark</button>
+        <button type="button" class="btn btn-light">btn-light</button>
+        <button type="button" class="btn btn-link">btn-link</button>
+        <button type="button" class="btn btn-outline-primary">btn-outline-primary</button>
+        <button type="button" class="btn btn-outline-secondary">btn-outline-secondary</button>
+        <button type="button" class="btn btn-outline-success">btn-outline-success</button>
+        <button type="button" class="btn btn-outline-info">btn-outline-info</button>
+        <button type="button" class="btn btn-outline-danger">btn-outline-danger</button>
+        <button type="button" class="btn btn-outline-dark">btn-outline-dark</button>
+        <button type="button" class="btn btn-outline-light">btn-outline-light</button>
+        <button type="button" class="btn btn-outline-link">btn-outline-link</button>
+        <button type="button" class="btn btn-sm">btn-sm</button>
+        <button type="button" class="btn btn-lg">btn-lg</button>
+        <button type="button" class="btn btn-block">btn-block</button>
+        <button type="button" class="btn btn-block disabled">btn-block disabled</button>
+        <button type="button" class="btn btn-block active">btn-block active</button>
+        <h2 class="row">Grupos de botones</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">btn-group</button>
+            <button type="button" class="btn btn-info">btn-group</button>
+            <button type="button" class="btn btn-info">btn-group</button>
+        </div>
+        <div class="btn-group btn-group-sx">
+            <button type="button" class="btn btn-info">btn-group-sx</button>
+            <button type="button" class="btn btn-info">btn-group-sx</button>
+            <button type="button" class="btn btn-info">btn-group-sx</button>
+        </div>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-info">btn-group-sm</button>
+            <button type="button" class="btn btn-info">btn-group-sm</button>
+            <button type="button" class="btn btn-info">btn-group-sm</button>
+        </div>
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-info">btn-group-lg</button>
+            <button type="button" class="btn btn-info">btn-group-lg</button>
+            <button type="button" class="btn btn-info">btn-group-lg</button>
+        </div>
+        <div class="btn-group btn-group-vertical">
+            <button type="button" class="btn btn-info">btn-group-vertical</button>
+            <button type="button" class="btn btn-info">btn-group-vertical</button>
+            <button type="button" class="btn btn-info">btn-group-vertical</button>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-info">btn-group-vertical</button>
+            <button type="button" class="btn btn-info">btn-group-vertical</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">dropdown-menu</button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                    <a href="#" class="dropdown-item">dropdown-item</a>
+                </div>
+            </div>
+        </div>
+        <!--INSIGNIAS-->
+        <h1 class="row">INSIGNIAS</h1>
+        <p>esto es un ejemplo de <span class="badge">insignia</span></p>
+        <span class="badge-primary">badge-primary</span>
+        <span class="badge-secondary">badge-secondary</span>
+        <span class="badge-success">badge-success</span>
+        <span class="badge-warning">badge-warning</span>
+        <span class="badge-danger">badge-danger</span>
+        <span class="badge-info">badge-info</span>
+        <span class="badge-light">badge-ligh</span>
+        <span class="badge-dark">badge-dark</span>
+        <span class="badge-primary badge-pill">badge-pill</span>
+        <button type="button" class="btn btn-primary">Dentro de objetos <span class="badge badge-light">inside</span> </button>
+        <!--BARRAS DE PROGRESO-->
+        <h1 class="row">BARRAS DE PROGRESO</h1>
+        <div class="progress">
+            <div class="progress-bar w-50 bg-success">progress-bar</div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped w-75 bg-warning">progress-bar-striped</div>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-75 bg-dark">progress-bar-animated</div>
+        </div>
+        <br>
+        <div class="progress" style="height: 50px;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-25 bg-success">progress-bar-animated</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-25 bg-warning">progress-bar-animated</div>
+            <div class="progress-bar progress-bar-striped progress-bar-animated w-50 bg-danger">progress-bar-animated</div>
+
+        </div>
+        <!--PAGINACIÓN-->
+        <h1 class="row">PAGINACIÓN</h1>
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Previus</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">active</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">disabled</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <!--pagination-sm-->
+        <h2 class="row">pagination-sm</h2>
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a class="page-link" href="#">Previus</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <!--pagination-lg-->
+        <h2 class="row">pagination-lg</h2>
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a class="page-link" href="#">Previus</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        <!--beadcrumb-->
+        <h2 class="row">beadcrumb</h2>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Ropa</a></li>
+            <li class="breadcrumb-item"><a href="#">Mujer</a></li>
+            <li class="breadcrumb-item"><a href="#">Vestidos</a></li>
+        </ul>
+        <!--list-group-->
+        <h2 class="row">list-group</h2>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">Lunes list-group-item-success (color)</li>
+            <li class="list-group-item active">Martes (active)</li>
+            <li class="list-group-item disabled">Miércoles (disabled)</li>
+            <li class="list-group-item bg-warning">Jueves (bg-success)</li>
+        </ul>
+        <!--list-group con div y links-->
+        <h2 class="row">list-group-item-active con links y un div</h2>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-active list-group-item-info" href="#">list-group-item-active</a>
+            <a class="list-group-item list-group-item-active" href="#">list-group-item-active</a>
+            <a class="list-group-item list-group-item-active" href="#">list-group-item-active</a>
+        </div>
+        <!--TARJETAS-->
+        <h1 class="row">TARJETAS</h1>
+        <div class="card w-50">
+            <div class="card-header">card-header</div>
+            <img class="h-100 w-100" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="card image">
+            <div class="card-body">
+                <h3 class="card-title">card-title</h3>
+                <p class="card-text">card-text</p>
+                <a href="#" class="btn btn-primary">btn</a>
+            </div>
+            <div class="card-footer">card-footer</div>
+        </div>
+        <!--DROPDOWN MENU-->
+        <h1 class="row">DROPDOWN MENU</h1>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">dropdown</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">dropdown-header</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <div class="dropdown-divider">dropdown-divider</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+            </div>
+        </div>
+        <!--dropup-->
+        <h2 class="row">dropup</h2>
+        <div class="dropup">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">dropdown</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">dropdown-header</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <div class="dropdown-divider">dropdown-divider</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+            </div>
+        </div>
+        <!--dropright-->
+        <h2 class="row">dropright</h2>
+        <div class="dropright">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">dropdown</button>
+            <div class="dropdown-menu">
+                <div class="dropdown-header">dropdown-header</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <div class="dropdown-divider">dropdown-divider</div>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+                <a class="dropdown-item" href="#">dropdown-item</a>
+            </div>
+        </div>
+        <!--DESPLEGABLES-->
+        <h1 class="row">DESPLEGABLES</h1>
+        <button data-toggle="collapse" data-target="#demo">collapse</button>
+        <div id="demo" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos, recusandae iste ex, molestiae perspiciatis vitae quas vero officiis facere autem, facilis tenetur! Provident aliquid fuga minima natus quidem maiores!</div>
+        <button data-toggle="collapse" data-target="#demo2">collapse</button>
+        <div id="demo2" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos, recusandae iste ex, molestiae perspiciatis vitae quas vero officiis facere autem, facilis tenetur! Provident aliquid fuga minima natus quidem maiores!</div>
+        <button data-toggle="collapse" data-target="#demo3">collapse</button>
+        <div id="demo3" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos, recusandae iste ex, molestiae perspiciatis vitae quas vero officiis facere autem, facilis tenetur! Provident aliquid fuga minima natus quidem maiores!</div>
+        <!--links-->
+        <h2 class="row">desplegables con links</h2>
+        <a data-toggle="collapse" href="#demo-link">collapse</a>
+        <div id="demo-link" class="collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dignissimos, recusandae iste ex, molestiae perspiciatis vitae quas vero officiis facere autem, facilis tenetur! Provident aliquid fuga minima natus quidem maiores!</div>
+        <!--acordion-->
+        <h2 class="row">acordion</h2>
+        <div class="card">
+            <div class="card-header">
+                <a href="#uno" class="card-link" data-toggle="collapse" data-parent="#acordion">acordion</a>
+                <div id="uno" class="collapse show">
+                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium nemo sint est! Iusto, suscipit placeat velit quod quo nobis architecto dolorum. Explicabo, repellendus cum asperiores unde provident delectus doloribus.</div>
+
+                </div>
+            </div>
+            <div class="card-header">
+                <a href="#dos" class="card-link" data-toggle="collapse" data-parent="#acordion">acordion</a>
+                <div id="dos" class="collapse">
+                    <div class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium nemo sint est! Iusto, suscipit placeat velit quod quo nobis architecto dolorum. Explicabo, repellendus cum asperiores unde provident delectus doloribus.</div>
+
+                </div>
+            </div>
+        </div>
+        <!--MENÚS DE NAVEGACIÓN-->
+        <h1 class="row">MENUS DE NAVEGACIÓN</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">nav-link disabled</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>justify-content-end</h2>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>justify-content-center</h2>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>flex-column</h2>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>nav-pills</h2>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link active" href="#">nav-link active</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>nav-justified</h2>
+                    <ul class="nav nav-justified">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>nav con dropdown-menu</h2>
+                    <ul class="nav nav-justified">
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">nav-link</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">dropdown-item</a>
+                                <a class="dropdown-item" href="#">dropdown-item</a>
+                                <a class="dropdown-item" href="#">dropdown-item</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>navbar navbar-expand-sm y navbar-brand</h2>
+                    <div class="navbar navbar-expand-sm bg-dark">
+                        <ul class="navbar-nav">
+                            <a class="navbar-brand" href="#">LOGO</a>
+                            <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>navbar-toggler</h2>
+                    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+                        <a class="navbar-brand" href="#">LOGO</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>form (buscar)</h2>
+                    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+                        <a class="navbar-brand" href="#">LOGO</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">nav-link</a></li>
+
+                                <form action="miforulario.php" method="post" class="form-inline">
+                                    <input type="text" placeholder="Buscar" class="form-control mr-sm-2">
+                                    <button class="btn btn-success" type="submit">Buscar</button>
+                                </form>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FORMULARIOS-->
+        <h1 class="row">FORMULARIOS</h1>
+        <form action="proceso.php" method="POST">
+            <label for="nombre">Nombre (form-control)</label><input type="text" id="nombre" class="form-control">
+            <label for="email">Email</label><input type="email" id="email" class="form-control">
+            <label for="tiempo">Fecha</label><input type="datetime" id="tiempo" class="form-control">
+            <label for="color">Color</label><input type="color" id="color" class="form-control">
+            <label for="password">Contraseña</label><input type="password" id="password" class="form-control">
+
+            <label for="recordar" class="form-check-label"> <input type="checkbox" class="form-check-input"> form-check-label / form-check-input</label><br>
+
+            <textarea name="descripcion" id="textarea" cols="30" rows="10"></textarea><br>
+            <input type="submit" name="ENVIAR" class="btn btn-success">
+        </form>
+        <!--form-inline-->
+        <h2 class="row">form-inline</h2>
+        <form action="proceso.php" method="POST" class="form-inline">
+            <label for="nombre">Nombre</label><input type="text" id="nombre" class="form-control">
+            <label for="email">Email</label><input type="email" id="email" class="form-control">
+            <label for="tiempo">Fecha</label><input type="datetime" id="tiempo" class="form-control">
+            <label for="color">Color</label><input type="color" id="color" class="form-control">
+            <label for="password">Contraseña</label><input type="password" id="password" class="form-control">
+
+            <input type="submit" name="ENVIAR" class="btn btn-success">
+        </form>
+
+        <!--form-check-->
+        <form action="proceso.php" method="POST">
+            <h2 class="row">form-check</h2>
+            <div class="form-check">
+                <label for="" class="form-check-label"> <input type="checkbox" class="form-check-input" value="">Option 1 </label>
+            </div>
+            <div class="form-check">
+                <label for="" class="form-check-label"> <input type="checkbox" class="form-check-input" value="">Option 2 </label>
+            </div>
+            <div class="form-check">
+                <label for="" class="form-check-label"> <input type="checkbox" class="form-check-input" value="">Option 3 </label>
+            </div>
+        </form>
+        <!--radio-inline-->
+        <form action="proceso.php" method="POST">
+            <h2 class="row">radio-inline</h2>
+            <div class="radio">
+                <label for="" class="radio-inline"> <input type="radio" name="gusto">radio-inline</label>
+                <label for="" class="radio-inline"> <input type="radio" name="gusto">radio-inline</label>
+                <label for="" class="radio-inline"> <input type="radio" name="gusto">radio-inline</label>
+            </div>
+        </form>
+
+        <!--select-->
+        <form action="proceso.php" method="POST">
+            <h2 class="row">radio-inline</h2>
+            <select name="select">
+                <option value="option1">Option1</option>
+                <option value="option2">Option2</option>
+                <option value="option3">Option3</option>
+            </select>
+        </form>
+
+        <!--CAROUSEL-->
+        <h1 class="row">SLIDERS O CAROUSEL</h1>
+
+        <div id="demo-slide" class="carousel slide" data-ride="carousel">
+            <!--indicadores-->
+            <ul class="carousel-indicators">
+                <li data-target="demo-slide" data-slide-to="0" class="active"></li>
+                <li data-target="demo-slide" data-slide-to="1"></li>
+                <li data-target="demo-slide" data-slide-to="2"></li>
+            </ul>
+
+            <!--images-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="carousel img">
+                    <div class="carousel-caption">
+                        <h3>carousel-caption</h3>
+                        <p>description</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="carousel img">
+                    <div class="carousel-caption bg-dark">
+                        <h3>carousel-caption 2</h3>
+                        <p>description</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid" src="https://previews.123rf.com/images/zlajo/zlajo1302/zlajo130200001/17779366-vector-%C3%A1rbol-sobre-chapoteo-del-color.jpg" alt="carousel img">
+                    <div class="carousel-caption">
+                        <h3>carousel-caption 3</h3>
+                        <p>description</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--botones-->
+
+            <a class="carousel-control-prev" href="#demo-slide" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a class="carousel-control-next" href="#demo-slide" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+        </div>
+
+        <!--MODAL-->
+        <h1 class="row">MODAL</h1>
+
+        <!--Modal button-->
+        <button type="button" class="btn btn_primary" data-toggle="modal" data-target="#mimodal">CONSULTA</button>
+
+        <!--Modal-->
+        <div class="modal fade" id="mimodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!--header-->
+                    <div class="modal-header">
+                        <h4 class="modal-title">modal-title</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!--body-->
+                    <div class="modal-body">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates eveniet quas, sint possimus ea fugiat consequuntur asperiores voluptas beatae ab? Iusto blanditiis odio alias dicta, voluptatum nobis nemo corrupti delectus?</p>
+                    </div>
+                    <!--footer-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Aceptar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--TOOLTIP-->
+        <h1 class="row">TOOLTIP</h1>
+        <a href="#" data-toggle="tooltip" title="este es el tooltip">Pon el ratón encima</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, voluptatibus <a href="#" data-toggle="tooltip" title="este es el tooltip">Pon el ratón encima</a> a dolorem molestias veritatis cumque laborum pariatur quam laboriosam alias
+            ut aliquam iure? Blanditiis dignissimos quaerat modi maxime dicta provident?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--****************************************FIN CONTENIDO**********************************************-->
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

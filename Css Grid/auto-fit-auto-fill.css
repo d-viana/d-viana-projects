@@ -1,0 +1,17 @@
+.contenedor {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/*auto-fit rellena el espacio disponible con el contenido disponible y 
+al crear nuevo contenido los desplaza y re-escala los antigüos hasta llegar a rellenar una fila,
+después se comporta como auto-fill*/
+.auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+/*auto-fill crea nuevos tracks vacios hasta llenar el hueco disponible
+remplazando estos con el nuevo contenido*/
+.auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}

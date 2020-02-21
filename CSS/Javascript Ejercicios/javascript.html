@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicios Javascript</title>
+
+    <script>
+        var nombre;
+        var fecha = new Date(); //Fecha y hora actuales 
+        var hora = fecha.getHours(); //hora actual en formato 24h
+        var minuto = fecha.getMinutes();
+
+
+        //desde el prompt guarda el nombre en la variable nombre
+        nombre = window.prompt("Introduzca su nombre");
+
+
+        document.writeIn("Bienvenido " + nombre + ", son las: " + hora + " : " + minuto + " del dia " + fecha);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.contenedor .items {
+    background-color: crimson;
+    /*Determina la posicion de la casilla en la que empieza el item y en la que justo acaba
+     (no en esa posicion sino al principio)*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+    /*Determina donde comieza la fila y donde acaba (el tamaño en altura que ocupará,
+    número de filas que ocupará, sin ocupar el valor final (si pone 3 ocupara 2 filas enteras hasta la tercera)) */
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.contenedor .items02 {
+    background-color: crimson;
+    /*Determina la posicion de la casilla en la que empieza el item y en la que justo acaba
+     (no en esa posicion sino al principio)*/
+    grid-column: 1/4;
+    /*Determina donde comieza la fila y donde acaba (el tamaño en altura que ocupará,
+    número de filas que ocupará, sin ocupar el valor final (si pone 3 ocupara 2 filas enteras hasta la tercera)) */
+    grid-row: 2/5;
+}
+
+.contenedor .items03 {
+    background-color: crimson;
+    /*Si hemos puesto cuatro valores: 
+    grid-row-start es el primer valor, 
+    grid-column-start es el segundo valor, 
+    grid-row-end es el tercer valor 
+    y grid-column-end es el cuarto valor.*/
+    grid-area: 2/2/4/4;
+}
+
+.contenedor .items04 {
+    background-color: crimson;
+    /*El primer valor marca la posicion donde va a comenzar el item
+    span marca la cantidad de casillas que va a abarcar*/
+    grid-column: 2/span 2;
+    grid-row: 2/span 3;
+}

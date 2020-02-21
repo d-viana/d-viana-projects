@@ -1,0 +1,72 @@
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /*Nombre de la animación*/
+    animation-name: myanimation;
+    /*Duración de la animación*/
+    animation-duration: 4s;
+    /*Veces que se va arepetir la animación*/
+    animation-iteration-count: infinite;
+    /*Tiempo que tarda la animación en empezar*/
+    animation-delay: 1s;
+    /*animation-direction: reverse -> Corre la animación hacia atrás*/
+    /*animation-direction: alternate -> Corre la animación hacia alante y después hacia atrás*/
+    animation-direction: alternate;
+    /*Modifica la curva de la animación: Comienza más lento y después rápido o al reves*/
+    animation-timing-function: ease-in-out;
+    /*Copia el estilo del último keyframe y se lo deja aplicado
+    Esto solo funciona si animation-iteration-count es finito y según la animation-direction*/
+    animation-fill-mode: forwards;
+}
+
+
+/*Acción al pasar por encima el ratón*/
+
+.box:hover {
+    transform: rotateX(75deg);
+}
+
+
+/*Keyframes de la animación "myanimation" de 0% al 100% de la animación*/
+
+
+/*Cambia el color, posición(margin left, top, right, bottom)*/
+
+@keyframes myanimation {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 0 0 0 0;
+    }
+    25% {
+        background-color: red;
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background-color: green;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    75% {
+        background-color: blue;
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100% {
+        background-color: wheat;
+        left: 0px;
+        top: 0px;
+        border-radius: 0 0 0 0;
+    }
+}

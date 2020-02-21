@@ -1,0 +1,49 @@
+body {
+    background-color: darkslategray;
+}
+
+ins {
+    color: deepskyblue;
+}
+
+h1 {
+    color: lightskyblue;
+    margin-left: 40px;
+}
+
+p {
+    color: azure;
+}
+
+q,
+blockquote,
+abbr,
+address,
+cite,
+bdo {
+    color: burlywood;
+}
+
+caption {
+    color: crimson;
+}
+
+td {
+    color: darkcyan;
+}
+
+h2 {
+    color: red;
+}
+
+h3 {
+    color: yellowgreen;
+}
+
+h4 {
+    color: rgb(153, 0, 255);
+}
+
+h5 {
+    color: rgb(255, 230, 0);
+}

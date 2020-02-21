@@ -1,0 +1,24 @@
+.contenedor {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 200px 100px 200px;
+  /*Le da a las nuevas filas el tamaño determinado*/
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
+  /*Hace que los elementos se vayan agregando en columnas en lugar de filas*/
+  grid-auto-flow: row dense;
+  /*Valores: column, row, dense, column row, column dense*/
+}
+
+.contenedor .span2 {
+  grid-column: span 2;
+  /*grid-row: span 2;*/
+  background: crimson;
+}
+
+.contenedor .span3 {
+  grid-column: span 3;
+  /*grid-row: span 3;*/
+  background: aqua;
+}

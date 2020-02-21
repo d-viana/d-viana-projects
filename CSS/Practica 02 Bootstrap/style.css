@@ -1,0 +1,42 @@
+.carousel .item {
+    height: 500px;
+}
+
+.item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
+
+.main-menu {
+    background-color: darkslategray;
+    justify-content: flex-start;
+}
+
+.main-icon {
+    margin: 5px;
+    justify-content: center;
+    background-color: gainsboro;
+    border-radius: 100%;
+}
+
+.img {
+    align-content: center;
+    margin-top: 10%;
+}
+
+.button-menu {
+    background-color: dimgray;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.link-menu {
+    color: white;
+}
+
+.button-menu-right {
+    justify-content: right;
+}

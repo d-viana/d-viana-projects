@@ -1,0 +1,8 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    /*repat(x,y) repite x veces el valor y, en este caso es el tamaño de cada columna*/
+    grid-template-columns: repeat(4, 1fr);
+    /*repite x veces el tamaño de cada fila*/
+    grid-template-rows: repeat(3, 1fr);
+}
